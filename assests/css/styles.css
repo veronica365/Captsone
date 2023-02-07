@@ -1,0 +1,18 @@
+.headline {
+    height: 25px;
+    color: #fff;
+    background-color: #3e3e3e;
+}
+
+.headline .container > div {
+    width: 300px;
+}
+
+.headline span {
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.navigation{
+    box-shadow: 1px 0px 5px #888888;
+}
