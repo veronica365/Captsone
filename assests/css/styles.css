@@ -59,43 +59,59 @@ main .hero .date {
 }
 
 main .programes {
-    background-color: var(--bs-gray-dark);
+  background-color: var(--bs-gray-dark);
 }
 
 main .programes h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 main .programes h3 {
-    font-size: 0.9rem;
-    line-height: 0.9rem;
-    text-decoration: underline;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  text-decoration: underline;
 }
 
-main .programes h3.card-title{
-    font-size: 1rem;
-    text-decoration: none;
+main .programes h3.card-title {
+  font-size: 1rem;
+  text-decoration: none;
 }
 
-main .programes hr {
-    width: 70px;
-    border-width: 2px;
-    border-color: var(--hero-color);
-    opacity: 0.6;
+main .programes hr,
+main .speakers hr {
+  width: 70px;
+  border-width: 2px;
+  border-color: var(--hero-color);
+  opacity: 0.6;
 }
 
 main .programes .program-wrapper .program {
-    max-width: 16rem;
-    border-radius: unset;
-    background-color: var(--bs-gray-700);
-    margin-right: 0.2rem;
+  max-width: 16rem;
+  border-radius: unset;
+  background-color: var(--bs-gray-700);
+  margin-right: 0.2rem;
 }
 
 main .programes .program-wrapper .program .fa-solid {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-main .programes .program-wrapper .program .card-title{
-    color: var(--hero-color);
-    font-weight: bolder;
+main .programes .program-wrapper .program .card-title {
+  color: var(--hero-color);
+  font-weight: bolder;
+}
+
+main .speakers .speaker-wrapper .speaker span {
+  font-style: italic;
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--hero-color);
+}
+
+main .speakers .speaker-wrapper .speaker .card-title{
+  font-weight: bolder;
+}
+
+main .speakers .speaker-wrapper .speaker .image-wrap {
+  max-width: 150px;
 }
