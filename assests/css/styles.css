@@ -38,13 +38,13 @@ main .hero .hero-overlay {
 }
 
 main .hero .title {
-  font-size: 7rem;
+  font-size: 3.5rem;
   color: var(--hero-color);
   font-weight: bolder;
 }
 
 main .hero .subtitle {
-  font-size: 3rem;
+  font-size: 1.2rem;
   color: var(--hero-color);
   font-weight: bold;
 }
@@ -54,7 +54,7 @@ main .hero .description {
 }
 
 main .hero .date {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bolder;
 }
 
@@ -86,7 +86,6 @@ main .speakers hr {
 }
 
 main .programes .program-wrapper .program {
-  max-width: 16rem;
   border-radius: unset;
   background-color: var(--bs-gray-700);
   margin-right: 0.2rem;
@@ -99,6 +98,7 @@ main .programes .program-wrapper .program .fa-solid {
 main .programes .program-wrapper .program .card-title {
   color: var(--hero-color);
   font-weight: bolder;
+  white-space: nowrap;
 }
 
 main .speakers .speaker-wrapper .speaker span {
@@ -108,10 +108,36 @@ main .speakers .speaker-wrapper .speaker span {
   color: var(--hero-color);
 }
 
-main .speakers .speaker-wrapper .speaker .card-title{
+#speakers.speakers .speaker-wrapper .row > div {
+  padding: 1.5rem;
+  background: url(/assests/img/speaker-pattern.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100px;
+}
+
+main .speakers .speaker-wrapper .speaker .card-title {
   font-weight: bolder;
 }
 
 main .speakers .speaker-wrapper .speaker .image-wrap {
   max-width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  main .hero .title {
+    font-size: 7rem;
+  }
+
+  main .hero .subtitle {
+    font-size: 3rem;
+  }
+
+  main .hero .date {
+    font-size: 2rem;
+  }
+
+  main .programes .program-wrapper .program {
+    max-width: 16rem;
+  }
 }
