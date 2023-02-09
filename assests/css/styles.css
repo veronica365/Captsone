@@ -24,17 +24,19 @@
 
 main .hero {
   min-height: calc(100vh - 93px);
-  background-image: url(/assests/img/photo-1560439514-4e9645039924.avif);
+  background-image: linear-gradient(
+      to right,
+      rgb(255 255 255 / 90%),
+      rgb(255 255 255 / 90%)
+    ),
+    url(/assests/img/photo-1560439514-4e9645039924.avif);
   background-size: cover;
-  mix-blend-mode: multiply;
   background-repeat: no-repeat;
 }
 
 main .hero .hero-overlay {
   width: 100%;
-  opacity: 0.8;
   min-height: calc(100vh - 93px);
-  background: white;
 }
 
 main .hero .title {
@@ -101,8 +103,8 @@ main .programes .program-wrapper .program .card-title {
   white-space: nowrap;
 }
 
-main .programes .title-3 h3{
-  font-size: calc(1.3rem + .6vw);
+main .programes .title-3 h3 {
+  font-size: calc(1.3rem + 0.6vw);
   font-weight: bolder;
   text-decoration: unset;
   line-height: 1.2;
@@ -131,6 +133,42 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
   max-width: 150px;
 }
 
+.past-events .event-1,
+.past-events .event-2 {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.past-events .event-1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(224, 2, 2, 0.5),
+      rgba(255, 9, 9, 0.5)
+    ),
+    url(/assests/img/conference-1.jpg);
+}
+.past-events .event-2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(224, 2, 2, 0.5),
+      rgba(255, 9, 9, 0.5)
+    ),
+    url(/assests/img/conference-2.jpg);
+}
+
+.past-events .event-1 span,
+.past-events .event-2 span {
+  font-size: 3rem;
+}
+
+.past-events .event-1 p,
+.past-events .event-2 p {
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
   main .hero .title {
     font-size: 7rem;
@@ -146,5 +184,9 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
 
   main .programes .program-wrapper .program {
     max-width: 16rem;
+  }
+  .past-events .event-1,
+  .past-events .event-2 {
+    width: 45%;
   }
 }
