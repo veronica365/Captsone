@@ -1,0 +1,237 @@
+* {
+  font-family: Lato, sans-serif;
+
+  --hero-color: #ec5242;
+  --dark-color: #272a31;
+  --gray-color: #d3d3d3;
+}
+
+body {
+  color: var(--dark-color);
+}
+
+#navbar-supported-content button {
+  border-color: var(--hero-color);
+}
+
+.headline {
+  height: 25px;
+  color: #fff;
+  background-color: #3e3e3e;
+}
+
+.headline .container > div {
+  width: 300px;
+}
+
+.headline span {
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.navigation {
+  box-shadow: 1px 0 5px #888;
+}
+
+.navigation .navbar .navbar-toggler .navbar-close-icon {
+  display: block;
+}
+
+.navigation .navbar .navbar-toggler.collapsed .navbar-close-icon,
+.navigation .navbar .navbar-toggler .navbar-toggler-icon {
+  display: none;
+}
+
+.navigation .navbar .navbar-toggler.collapsed .navbar-toggler-icon {
+  display: block;
+}
+
+main .hero {
+  min-height: calc(100vh - 93px);
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(255 255 255 / 90%),
+      rgb(255 255 255 / 90%)
+    ),
+    url("../img/photo-1560439514-4e9645039924.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .hero .hero-overlay {
+  width: 100%;
+  min-height: calc(100vh - 93px);
+}
+
+main .hero .title {
+  font-size: 3.5rem;
+  color: var(--hero-color);
+  font-weight: bolder;
+}
+
+main .hero .subtitle {
+  font-size: 1rem;
+  color: var(--hero-color);
+  font-weight: bold;
+}
+
+main .hero .description {
+  font-size: 1rem;
+}
+
+main .hero .description p {
+  font-size: 1.1rem;
+  padding: 0.6rem;
+}
+
+main .hero .date {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+main .programes {
+  background-color: var(--bs-gray-dark);
+}
+
+main .programes h2 {
+  font-size: 1.5rem;
+}
+
+main .programes h3 {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  text-decoration: underline;
+}
+
+main .programes h3.card-title {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+main .programes hr,
+main .speakers hr {
+  width: 70px;
+  border-width: 2px;
+  border-color: var(--hero-color);
+  opacity: 0.6;
+}
+
+main .programes .program-wrapper .program {
+  border-radius: unset;
+  background-color: var(--bs-gray-700);
+  margin-right: 0.2rem;
+}
+
+main .programes .program-wrapper .program .fa-solid {
+  font-size: 3rem;
+}
+
+main .programes .program-wrapper .program .card-title {
+  color: var(--hero-color);
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+main .programes .title-3 h3 {
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: bolder;
+  text-decoration: unset;
+  line-height: 1.2;
+}
+
+main .speakers .speaker-wrapper .speaker span {
+  font-style: italic;
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--hero-color);
+}
+
+#speakers.speakers .speaker-wrapper .row .col-lg-6 {
+  padding: 1.5rem;
+  background: url("../img/speaker-pattern.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100px;
+}
+
+main .speakers .speaker-wrapper .speaker .card-title {
+  font-weight: bolder;
+}
+
+main .speakers .speaker-wrapper .speaker .image-wrap {
+  max-width: 150px;
+}
+
+.past-events .event-1,
+.past-events .event-2 {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.past-events .event-1 {
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(224 2 2 / 50%),
+      rgb(255 9 9 / 50%)
+    ),
+    url("../img/conference-1.png");
+}
+
+.past-events .event-2 {
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(224 2 2 / 50%),
+      rgb(255 9 9 / 50%)
+    ),
+    url("../img/conference-2.png");
+}
+
+main .speaker-wrapper .past-events .event-1 span,
+main .speaker-wrapper .past-events .event-2 span {
+  font-size: 3rem;
+}
+
+main .speaker-wrapper .past-events .event-1 p,
+main .speaker-wrapper .past-events .event-2 p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  main .speakers.mobile .col-lg-6.mb-4 {
+    display: none;
+  }
+
+  main .speakers.mobile .col-lg-6.mb-4:first-child,
+  main .speakers.mobile .col-lg-6.mb-4:nth-child(2) {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .hero .title {
+    font-size: 5rem;
+  }
+
+  main .hero .subtitle {
+    font-size: 2rem;
+  }
+
+  main .hero .date {
+    font-size: 2rem;
+  }
+
+  main .programes .program-wrapper .program {
+    max-width: 16rem;
+  }
+
+  .past-events .event-1,
+  .past-events .event-2 {
+    width: 45%;
+  }
+}
