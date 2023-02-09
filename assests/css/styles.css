@@ -1,5 +1,6 @@
 * {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
+
   --hero-color: #f14123;
 }
 
@@ -19,27 +20,31 @@
 }
 
 .navigation {
-  box-shadow: 1px 0px 5px #888888;
+  box-shadow: 1px 0 5px #888;
 }
 
-.navigation .navbar .navbar-toggler.collapsed .navbar-toggler-icon,
 .navigation .navbar .navbar-toggler .navbar-close-icon {
   display: block;
 }
 
-.navigation .navbar .navbar-toggler .navbar-toggler-icon,
-.navigation .navbar .navbar-toggler.collapsed .navbar-close-icon {
+.navigation .navbar .navbar-toggler.collapsed .navbar-close-icon,
+.navigation .navbar .navbar-toggler .navbar-toggler-icon {
   display: none;
+}
+
+.navigation .navbar .navbar-toggler.collapsed .navbar-toggler-icon {
+  display: block;
 }
 
 main .hero {
   min-height: calc(100vh - 93px);
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
       rgb(255 255 255 / 90%),
       rgb(255 255 255 / 90%)
     ),
-    url(../img/photo-1560439514-4e9645039924.avif);
+    "url(../img/photo-1560439514-4e9645039924.avif)";
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -134,7 +139,7 @@ main .speakers .speaker-wrapper .speaker span {
 
 #speakers.speakers .speaker-wrapper .row .col-lg-6 {
   padding: 1.5rem;
-  background: url(../img/speaker-pattern.jpg);
+  background: "url(../img/speaker-pattern.jpg)";
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100px;
@@ -158,29 +163,32 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
 }
 
 .past-events .event-1 {
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       to right,
-      rgba(224, 2, 2, 0.5),
-      rgba(255, 9, 9, 0.5)
+      rgb(224 2 2 / 50%),
+      rgb(255 9 9 / 50%)
     ),
-    url(/assests/img/conference-1.png);
-}
-.past-events .event-2 {
-  background-image: linear-gradient(
-      to right,
-      rgba(224, 2, 2, 0.5),
-      rgba(255, 9, 9, 0.5)
-    ),
-    url(/assests/img/conference-2.png);
+    "url(/assests/img/conference-1.png)";
 }
 
-.past-events .event-1 span,
-.past-events .event-2 span {
+.past-events .event-2 {
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(224 2 2 / 50%),
+      rgb(255 9 9 / 50%)
+    ),
+    "url(/assests/img/conference-2.png)";
+}
+
+main .speaker-wrapper .past-events .event-1 span,
+main .speaker-wrapper .past-events .event-2 span {
   font-size: 3rem;
 }
 
-.past-events .event-1 p,
-.past-events .event-2 p {
+main .speaker-wrapper .past-events .event-1 p,
+main .speaker-wrapper .past-events .event-2 p {
   font-size: 1.5rem;
 }
 
@@ -211,6 +219,7 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
   main .programes .program-wrapper .program {
     max-width: 16rem;
   }
+
   .past-events .event-1,
   .past-events .event-2 {
     width: 45%;
