@@ -23,12 +23,12 @@
 }
 
 .navigation .navbar .navbar-toggler.collapsed .navbar-toggler-icon,
-.navigation .navbar .navbar-toggler .navbar-close-icon{
+.navigation .navbar .navbar-toggler .navbar-close-icon {
   display: block;
 }
 
 .navigation .navbar .navbar-toggler .navbar-toggler-icon,
-.navigation .navbar .navbar-toggler.collapsed .navbar-close-icon{
+.navigation .navbar .navbar-toggler.collapsed .navbar-close-icon {
   display: none;
 }
 
@@ -182,6 +182,17 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
 .past-events .event-1 p,
 .past-events .event-2 p {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  main .speakers.mobile .col-lg-6.mb-4 {
+    display: none;
+  }
+
+  main .speakers.mobile .col-lg-6.mb-4:first-child,
+  main .speakers.mobile .col-lg-6.mb-4:nth-child(2) {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 768px) {

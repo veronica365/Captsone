@@ -48,6 +48,10 @@ const featuredSpeakers = [
       "Discover how to work more closely across your team with customer-led demos and templates.",
   },
 ];
+function showmore(){
+    $("#speakers").classList.toggle('mobile');
+    $(".show-more").classList.toggle('d-none');
+}
 
 const generateFeaturedSpeaker = (speakers) => {
   let innerHTML = "";
@@ -68,12 +72,14 @@ const generateFeaturedSpeaker = (speakers) => {
   });
   const mobileViewMore = `
     <div class="col-12">
-        <div class="py-2 text-center d-block d-md-none border border-2 border-gray">
+        <div class="py-2 text-center d-block d-md-none border border-2 border-gray show-more" onclick={showmore()}>
             <span class="m-0">More <i class="ms-2 fa-solid fa-angle-down text-danger fa-lg"></i></span>
         </div>
     </div>`;
   return (innerHTML += mobileViewMore);
 };
 
+const featuredTitle = $("#speakers .title-2");
 const featured = $("#speakers .speaker-wrapper .mx-auto");
+featuredTitle.innerHTML = `<h2 class="m-0 fw-bold">Featured Speakers</h2><hr />`;
 featured.innerHTML = generateFeaturedSpeaker(featuredSpeakers);
