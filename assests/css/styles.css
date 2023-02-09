@@ -44,7 +44,7 @@ main .hero {
       rgb(255 255 255 / 90%),
       rgb(255 255 255 / 90%)
     ),
-    "url(../img/photo-1560439514-4e9645039924.avif)";
+    url("../img/photo-1560439514-4e9645039924.avif");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -139,7 +139,7 @@ main .speakers .speaker-wrapper .speaker span {
 
 #speakers.speakers .speaker-wrapper .row .col-lg-6 {
   padding: 1.5rem;
-  background: "url(../img/speaker-pattern.jpg)";
+  background: url("../img/speaker-pattern.jpg");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100px;
@@ -169,7 +169,7 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
       rgb(224 2 2 / 50%),
       rgb(255 9 9 / 50%)
     ),
-    "url(/assests/img/conference-1.png)";
+    url("/assests/img/conference-1.png");
 }
 
 .past-events .event-2 {
@@ -179,7 +179,7 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
       rgb(224 2 2 / 50%),
       rgb(255 9 9 / 50%)
     ),
-    "url(/assests/img/conference-2.png)";
+    url("/assests/img/conference-2.png");
 }
 
 main .speaker-wrapper .past-events .event-1 span,
