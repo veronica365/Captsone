@@ -29,7 +29,7 @@ main .hero {
       rgb(255 255 255 / 90%),
       rgb(255 255 255 / 90%)
     ),
-    url(/assests/img/photo-1560439514-4e9645039924.avif);
+    url(../img/photo-1560439514-4e9645039924.avif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -46,13 +46,18 @@ main .hero .title {
 }
 
 main .hero .subtitle {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--hero-color);
   font-weight: bold;
 }
 
 main .hero .description {
   font-size: 1rem;
+}
+
+main .hero .description p {
+  font-size: 1.1rem;
+  padding: 0.6rem;
 }
 
 main .hero .date {
@@ -119,7 +124,7 @@ main .speakers .speaker-wrapper .speaker span {
 
 #speakers.speakers .speaker-wrapper .row .col-lg-6 {
   padding: 1.5rem;
-  background: url(/assests/img/speaker-pattern.jpg);
+  background: url(../img/speaker-pattern.jpg);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 100px;
@@ -171,11 +176,11 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
 
 @media screen and (min-width: 768px) {
   main .hero .title {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   main .hero .subtitle {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   main .hero .date {
