@@ -16,7 +16,7 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
-- [👥 Author](#authors)
+- [👥 Author](#author)
 - [🤝 Contributing](#contributing)
 - [🤝 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
@@ -101,7 +101,7 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
 - GitHub: [@verocnica365](https://github.com/verocnica365)
 
