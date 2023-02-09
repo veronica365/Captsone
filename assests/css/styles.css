@@ -101,6 +101,13 @@ main .programes .program-wrapper .program .card-title {
   white-space: nowrap;
 }
 
+main .programes .title-3 h3{
+  font-size: calc(1.3rem + .6vw);
+  font-weight: bolder;
+  text-decoration: unset;
+  line-height: 1.2;
+}
+
 main .speakers .speaker-wrapper .speaker span {
   font-style: italic;
   display: block;
@@ -108,7 +115,7 @@ main .speakers .speaker-wrapper .speaker span {
   color: var(--hero-color);
 }
 
-#speakers.speakers .speaker-wrapper .row > div {
+#speakers.speakers .speaker-wrapper .row .col-lg-6 {
   padding: 1.5rem;
   background: url(/assests/img/speaker-pattern.jpg);
   background-repeat: no-repeat;
