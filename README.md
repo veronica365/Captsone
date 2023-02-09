@@ -16,8 +16,9 @@
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
-- [👥 Authors](#authors)
+- [👥 Author](#authors)
 - [🤝 Contributing](#contributing)
+- [🤝 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
 # 📖 [Capstone] <a name="about-project"></a>
@@ -100,9 +101,7 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
-
-👤 **Author1**
+## 👥 Author <a name="authors"></a>
 
 - GitHub: [@verocnica365](https://github.com/verocnica365)
 
@@ -112,6 +111,12 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Acknowledgements <a name="acknowledgements"></a>
+
+A special shoutout toI would like to thank [Cindy Shin](https://www.behance.net/adagio07). The author of the original design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

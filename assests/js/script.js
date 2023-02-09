@@ -9,12 +9,14 @@ const featuredSpeakers = [
     id: 1,
     name: 'Suzan Wojiski',
     jobDescription: 'CEO of Youtube',
+    image: './assests/img/profile-1.png',
     headline:
       'Discover how to work more closely across your team with customer-led demos and templates.',
   },
   {
     id: 2,
     name: 'Larry Page',
+    image: './assests/img/profile-2.png',
     jobDescription: 'Google Co-founder &amp; Former CEO ',
     headline:
       'Discover how to work more closely across your team with customer-led demos and templates.',
@@ -22,6 +24,7 @@ const featuredSpeakers = [
   {
     id: 3,
     name: 'Catalina Popa',
+    image: './assests/img/profile-3.png',
     jobDescription: 'CEO of Creative Commons, ex COO of the Mozilla foundatio',
     headline:
       'Discover how to work more closely across your team with customer-led demos and templates.',
@@ -30,6 +33,7 @@ const featuredSpeakers = [
     id: 4,
     name: 'Ryan Merkley',
     jobDescription: 'CEO of Facebook',
+    image: './assests/img/profile-4.png',
     headline:
       'Discover how to work more closely across your team with customer-led demos and templates.',
   },
@@ -37,6 +41,7 @@ const featuredSpeakers = [
     id: 5,
     name: 'Daniel Oh',
     jobDescription: 'CEO of Apple',
+    image: './assests/img/profile-5.png',
     headline:
       'Discover how to work more closely across your team with customer-led demos and templates.',
   },
@@ -44,6 +49,7 @@ const featuredSpeakers = [
     id: 6,
     name: 'Johan Janssen',
     jobDescription: 'CEO of Tesla',
+    image: './assests/img/profile-6.png',
     headline:
       'Discover how to work more closely across your team with customer-led demos and templates.',
   },
@@ -52,10 +58,10 @@ const featuredSpeakers = [
 const generateFeaturedSpeaker = (speakers) => {
   let innerHTML = '';
   speakers.forEach((speaker) => {
-    innerHTML += `<div class="col-lg-6 mb-4">
+    innerHTML += `<article class="col-lg-6 mb-4">
                 <div class="d-flex flex-row speaker card border-0">
                     <div class="image-wrap">
-                        <img class="img-fluid" src="./assests/img/profile-${speaker.id}.png" alt="speaker 1">
+                        <img class="img-fluid" src="${speaker.image}" alt="${speaker.name}">
                     </div>
                     <div class="card-body pt-0 d-flex flex-column">
                         <h3 class="card-title m-0 mb-2">${speaker.name}</h3>
@@ -63,7 +69,7 @@ const generateFeaturedSpeaker = (speakers) => {
                         <p class="card-text">${speaker.headline}</p>
                     </div>
                 </div>
-            </div>
+            </article>
         `;
   });
   const mobileViewMore = `

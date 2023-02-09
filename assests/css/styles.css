@@ -1,7 +1,17 @@
 * {
   font-family: Lato, sans-serif;
 
-  --hero-color: #f14123;
+  --hero-color: #ec5242;
+  --dark-color: #272a31;
+  --gray-color: #d3d3d3;
+}
+
+body {
+  color: var(--dark-color);
+}
+
+#navbar-supported-content button {
+  border-color: var(--hero-color);
 }
 
 .headline {
@@ -169,7 +179,7 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
       rgb(224 2 2 / 50%),
       rgb(255 9 9 / 50%)
     ),
-    url("/assests/img/conference-1.png");
+    url("../img/conference-1.png");
 }
 
 .past-events .event-2 {
@@ -179,7 +189,7 @@ main .speakers .speaker-wrapper .speaker .image-wrap {
       rgb(224 2 2 / 50%),
       rgb(255 9 9 / 50%)
     ),
-    url("/assests/img/conference-2.png");
+    url("../img/conference-2.png");
 }
 
 main .speaker-wrapper .past-events .event-1 span,
